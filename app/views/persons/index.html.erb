@@ -1,0 +1,14 @@
+<h1>Persons#index</h1>
+<%= link_to 'создать', new_person_path %>
+
+<ul>
+  <% @persons.each do |p| %>
+    <h1>
+      <%= "#{p.id} #{p.lname} #{p.fname}" %>
+    </h1>
+    <p>
+      <%= "#{p.birth_date} #{p.gender} #{p.city}" %>
+    </p>
+    <%= link_to 'посмотреть', person_path(id: p.id) %>
+  <% end %>
+</ul>

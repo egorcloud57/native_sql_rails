@@ -1,0 +1,24 @@
+<h1>Persons#new</h1>
+
+<form action="/persons" accept-charset="UTF-8" method="post">
+  <label for="lname">Lname</label>
+  <input type="text" name="person[lname]" id="person_lname">
+  <br>
+  <label for="fname">Fname</label>
+  <input type="text" name="person[fname]" id="person_fname">
+  <br>
+  <label for="state">State</label>
+  <input type="text" name="person[state]" id="person_state">
+  <br>
+  <label for="gender">Gender</label>
+  <br>
+  <input type="radio" name="person[gender]" value="M" id="person_gender_m" checked>
+  <label for="person_gender_m">Man</label>
+  <input type="radio" name="person[gender]" value="F" id="person_gender_f" checked>
+  <label for="person_gender_f">Woman</label>
+  <br>
+  <label for="birth_date">Birth date</label>
+  <input type="date" name="person[birth_date]" id="birth_date">
+  <br>
+  <input type="submit" name="commit" value="create" data-disable-with="create">
+</form>
