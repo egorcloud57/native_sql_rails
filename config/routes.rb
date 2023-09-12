@@ -9,4 +9,9 @@ Rails.application.routes.draw do
   get 'union', to: 'union#index'
   get 'group', to: 'group_sql#index'
   get 'transaction', to: 'transaction#update'
+  get 'case_when', to: 'case_when#index'
+
+  namespace :hight_level do
+    get 'prepare', to: 'prepare_execute_dellocate#index'
+  end
 end
